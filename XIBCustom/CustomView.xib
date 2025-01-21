@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomView" customModule="XIBCustom" customModuleProvider="target">
+            <connections>
+                <outlet property="button" destination="cip-DY-NpL" id="SHV-XL-uFl"/>
+                <outlet property="textField" destination="NSd-mp-K44" id="u9r-qv-HxQ"/>
+                <outletCollection property="textView" destination="1Jo-f6-ffb" collectionClass="NSMutableArray" id="gKy-MQ-lh4"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="220"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="A" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NSd-mp-K44">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="1Jo-f6-ffb">
+                    <rect key="frame" x="0.0" y="72" width="393" height="71.666666666666686"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                    <color key="textColor" systemColor="labelColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cip-DY-NpL">
+                    <rect key="frame" x="159" y="169" width="75" height="34.333333333333343"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                    <connections>
+                        <action selector="buttonClicked:" destination="-1" eventType="touchUpInside" id="Jb3-aZ-AGZ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="NSd-mp-K44" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="0Za-1V-TXx"/>
+                <constraint firstItem="1Jo-f6-ffb" firstAttribute="top" secondItem="NSd-mp-K44" secondAttribute="bottom" constant="38" id="DMx-TX-cSd"/>
+                <constraint firstAttribute="trailing" secondItem="NSd-mp-K44" secondAttribute="trailing" id="GgA-BS-HCU"/>
+                <constraint firstItem="NSd-mp-K44" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="GtG-ad-yS8"/>
+                <constraint firstItem="cip-DY-NpL" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="aI3-w7-oPO"/>
+                <constraint firstItem="cip-DY-NpL" firstAttribute="top" secondItem="1Jo-f6-ffb" secondAttribute="bottom" constant="14" id="ayU-ai-w65"/>
+                <constraint firstAttribute="bottom" secondItem="cip-DY-NpL" secondAttribute="bottom" constant="28" id="bav-65-grn"/>
+                <constraint firstItem="1Jo-f6-ffb" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="lKU-7v-IRY"/>
+                <constraint firstItem="1Jo-f6-ffb" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="zOm-70-8rF"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="148.85496183206106" y="-652.11267605633805"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
